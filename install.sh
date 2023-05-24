@@ -19,5 +19,6 @@ su $user_name -c "echo $public_key >> /home/$user_name/.ssh/authorized_keys"
 chown $user_name /home/$user_name/.ssh
 chown $user_name /home/$user_name/.ssh/authorized_keys
 
-chown $user_name /etc/yum.conf
-chmod 644 /etc/yum.conf
+# permissions for yum.conf file
+# chown $user_name /etc/yum.conf
+# chmod 644 /etc/yum.conf
