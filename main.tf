@@ -25,6 +25,6 @@ resource "aws_instance" "my_personal_vm" {
     vpc_security_group_ids = [aws_security_group.vpc-ssh.id, aws_security_group.vpc-web.id]
 
     tags = {
-        Name = "my terraform instance" // 2.${count.index}
+        Name = "cld_shell_instance" 
     }
 }
